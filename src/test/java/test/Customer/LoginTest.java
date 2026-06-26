@@ -18,7 +18,7 @@ public class LoginTest extends BaseTest {
         commonPage commonPage = new commonPage(page);
         commonPage
                 .maximizeWindow() // Maximize window here if desired
-                .navigateTo(property("base_url") + "/auth/login");
+                .navigateTo(property("base_url") + "/login");
         loginPage
                 .fillEmailorMobile()
                 .fillPassword()

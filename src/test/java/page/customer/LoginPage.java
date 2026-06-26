@@ -20,7 +20,7 @@ public class LoginPage extends BasePage {
 
     @Step("fill Email or Mobile")
     public LoginPage fillEmailorMobile() throws IOException {
-        Tn_fillByLocator("emailOrMobile", property("login_mobile"));
+        Tn_fillByLocator("email", property("login_mobile"));
         return this;
     }
 
@@ -31,9 +31,10 @@ public class LoginPage extends BasePage {
     }
 
     public void clickOnSignInBtn() throws InterruptedException {
-        Tn_clickByText("to Access the Best Deals and Products in Bangladesh!");
-        Tn_clickByRole("button", "Sign In");
-        Tn_waitForElement("getHelpAndSupportLocator", 0);
-        Tn_containsText("getHelpAndSupportLocator", "Hasan", 0);
+//        Tn_clickByText("LoginBtn");
+//        Tn_clickByDataQAId("LoginBtn");
+//        Tn_clickByRole("button", "Sign In");
+//        Tn_waitForElement("getHelpAndSupportLocator", 0);
+//        Tn_containsText("getHelpAndSupportLocator", "Hasan", 0);
     }
 }

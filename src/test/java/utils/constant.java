@@ -4,7 +4,7 @@ public class constant {
     static String BaseDir = System.getProperty("user.dir");
     public static String configFilePath = BaseDir+ "/config.properties";
     public static String Resource_folder_path = "/src/test/resources/";
-    public static String locatorsPageName ="cartup";
+    public static String locatorsPageName ="locators";
     public static String apiConfigFilePath = BaseDir + "/apiConfig.properties";
     public static String admin="src/test/resources/authStates/admin.json";
     public static String customer="src/test/resources/authStates/customer.json";

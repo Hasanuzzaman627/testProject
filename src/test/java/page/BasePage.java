@@ -461,6 +461,18 @@ public class BasePage {
         });
     }
 
+    public void Tn_clickByDataQAId(String locatorName, Integer... index) {
+        HashMap<String, String> locatorValue = locatorMap(locatorName);
+        Allure.step("Click on the page " + locatorValue.get("pages") + " and performing click on " + locatorName + "(" + locatorValue.get("locator") + ")", () -> {
+            Locator locator = page.locator("[data-qa='" + locatorValue.get("locator") + "']");
+            if (index.length > 0) {
+                locator.nth(index[0]).click();
+            } else {
+                locator.click();
+            }
+        });
+    }
+
     /**
      * it will return the count of the element
      *
